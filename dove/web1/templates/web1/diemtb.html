@@ -15,21 +15,44 @@
     <body>
     <form method="post">
         <h2><p><font color="black" size="7" face="arial">Nhập vào điểm Toán</font></p> </h2>
-<input type="number" name="diemtoan" min="0" max="10" step="0.1" value="00">
+        <input type="number" name="diemtoan" min="0" max="10" step="0.1" value="00">
+        {% if data %}
+        <label style="padding-left: 10px;"><b>Điểm toán là: {{data.diemtoan}}</b></label>
+        {% endif %}
+        <h2><p><font color="black" size="3" face="arial">Nhập vào điểm Văn</font></p> </h2>
+        <input type="number" name="diemvan" min="0" max="10" step="0.1" value="00">
+        {% if data %}
+        <label style="padding-left: 10px;"><b>Điểm toán là: {{data.diemvan}}</b></label>
+        {% endif %}
 
-<h2><p><font color="black" size="3" face="arial">Nhập vào điểm Văn</font></p> </h2>
-<input type="number" name="diemvan" min="0" max="10" step="0.1" value="00">
+        <h2><p><font color="black" size="3" face="arial">Nhập vào điểm Anh</font></p> </h2>
+        <input type="number" name="diemanh" min="0" max="10" step="0.1" value="00">
+        {% if data %}
+        <label style="padding-left: 10px;"><b>Điểm toán là: {{data.diemanh}}</b></label>
+        {% endif %}
 
-<h2><p><font color="black" size="3" face="arial">Nhập vào điểm Anh</font></p> </h2>
-<input type="number" name="diemanh" min="0" max="10" step="0.1" value="00">
+        <h2><p><font color="black" size="3" face="arial">Nhập vào điểm Lý</font></p> </h2>
+        <input type="number" name="diemly" min="0" max="10" step="0.1" value="00">
+        {% if data %}
+        <label style="padding-left: 10px;"><b>Điểm toán là: {{data.diemly}}</b></label>
+        {% endif %}
 
-<h2><p><font color="black" size="3" face="arial">Nhập vào điểm Lý</font></p> </h2>
-<input type="number" name="diemly" min="0" max="10" step="0.1" value="00">
 
-<h2><p><font color="black" size="3" face="arial">Nhập vào điểm Hóa</font></p> </h2>
-<input type="number" name="diemhoa" min="0" max="10" step="0.1" value="00">
-<input type="submit">
-</form>
+        <h2><p><font color="black" size="3" face="arial">Nhập vào điểm Hóa</font></p> </h2>
+        <input type="number" name="diemhoa" min="0" max="10" step="0.1" value="00">
+        {% if data %}
+        <label style="padding-left: 10px;"><b>Điểm toán là: {{data.diemhoa}}</b></label>
+        {% endif %}
+
+        <br>
+        <br>
+        {% if data %}
+        <label style="padding-left: 10px;"><b>Điểm trung bình là: {{data.diemtrungbinh}}</b></label>
+        {% endif %}
+        <br>
+        <br>
+        <input type="submit">
+        </form>
 </p>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
