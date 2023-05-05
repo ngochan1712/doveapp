@@ -14,45 +14,69 @@
     </head>
     <body>
     <form method="post">
-        <h2><p><font color="black" size="7" face="arial">Nhập vào điểm Toán</font></p> </h2>
-        <input type="number" name="diemtoan" min="0" max="10" step="0.1" value="00">
+        <h2><p><font color="black" size="3" face="arial">Nhập vào điểm Toán</font></p> </h2>
+<input type="number" name="diemtoan" min="0" max="10" step="0.1" value="00">
         {% if data %}
-        <label style="padding-left: 10px;"><b>Điểm toán là: {{data.diemtoan}}</b></label>
+        <label style="padding-left: 100px;"><b>Điểm Toán là: {{data.diemtoan}}</b></label>
         {% endif %}
-        <h2><p><font color="black" size="3" face="arial">Nhập vào điểm Văn</font></p> </h2>
-        <input type="number" name="diemvan" min="0" max="10" step="0.1" value="00">
+<h2><p><font color="black" size="3" face="arial">Nhập vào điểm Văn</font></p> </h2>
+<input type="number" name="diemvan" min="0" max="10" step="0.1" value="00">
         {% if data %}
-        <label style="padding-left: 10px;"><b>Điểm toán là: {{data.diemvan}}</b></label>
-        {% endif %}
-
-        <h2><p><font color="black" size="3" face="arial">Nhập vào điểm Anh</font></p> </h2>
-        <input type="number" name="diemanh" min="0" max="10" step="0.1" value="00">
-        {% if data %}
-        <label style="padding-left: 10px;"><b>Điểm toán là: {{data.diemanh}}</b></label>
+        <label style="padding-left: 100px;"><b>Điểm Văn là: {{data.diemvan}}</b></label>
         {% endif %}
 
-        <h2><p><font color="black" size="3" face="arial">Nhập vào điểm Lý</font></p> </h2>
-        <input type="number" name="diemly" min="0" max="10" step="0.1" value="00">
+<h2><p><font color="black" size="3" face="arial">Nhập vào điểm Anh</font></p> </h2>
+<input type="number" name="diemanh" min="0" max="10" step="0.1" value="00">
         {% if data %}
-        <label style="padding-left: 10px;"><b>Điểm toán là: {{data.diemly}}</b></label>
+        <label style="padding-left: 100px;"><b>Điểm Anh là: {{data.diemanh}}</b></label>
+        {% endif %}
+
+<h2><p><font color="black" size="3" face="arial">Nhập vào điểm Lý</font></p> </h2>
+<input type="number" name="diemly" min="0" max="10" step="0.1" value="00">
+        {% if data %}
+        <label style="padding-left: 100px;"><b>Điểm Lý là: {{data.diemly}}</b></label>
         {% endif %}
 
 
-        <h2><p><font color="black" size="3" face="arial">Nhập vào điểm Hóa</font></p> </h2>
-        <input type="number" name="diemhoa" min="0" max="10" step="0.1" value="00">
+<h2><p><font color="black" size="3" face="arial">Nhập vào điểm Hóa</font></p> </h2>
+<input type="number" name="diemhoa" min="0" max="10" step="0.1" value="00">
         {% if data %}
-        <label style="padding-left: 10px;"><b>Điểm toán là: {{data.diemhoa}}</b></label>
+        <label style="padding-left: 100px;"><b>Điểm Hóa là: {{data.diemhoa}}</b></label>
         {% endif %}
-
+ <h2><p><font color="black" size="3" face="arial">Nhập vào điểm Sinh</font></p> </h2>
+<input type="number" name="diemsinh" min="0" max="10" step="0.1" value="00">
+        {% if data %}
+         <label style="padding-left: 100px;"><b>Điểm Sinh là: {{data.diemsinh}}</b></label>
+        {% endif %}
+<h2><p><font color="black" size="3" face="arial">Nhập vào điểm Giáo dục công dân</font></p> </h2>
+<input type="number" name="diemgdcd" min="0" max="10" step="0.1" value="00">
+        {% if data %}
+        <label style="padding-left: 100px;"><b>Điểm Giáo dục công dân là: {{data.diemgdcd}}</b></label>
+        {% endif %}
+<h2><p><font color="black" size="3" face="arial">Nhập vào điểm Công Nghệ</font></p> </h2>
+<input type="number" name="diemcongnghe" min="0" max="10" step="0.1" value="00">
+        {% if data %}
+        <label style="padding-left: 100px;"><b>Điểm Công Nghệ là: {{data.diemcongnghe}}</b></label>
+        {% endif %}
+<h2><p><font color="black" size="3" face="arial">Nhập vào điểm Sử</font></p> </h2>
+<input type="number" name="diemsu" min="0" max="10" step="0.1" value="00">
+        {% if data %}
+            <label style="padding-left: 100px;"><b>Điểm Sử là: {{data.diemsu}}</b></label>
+        {% endif %}
+<h2><p><font color="black" size="3" face="arial">Nhập vào điểm Địa</font></p> </h2>
+<input type="number" name="diemdia" min="0" max="10" step="0.1" value="00">
+        {% if data %}
+            <label style="padding-left: 100px;"><b>Điểm Địa là: {{data.diemdia}}</b></label>
+        {% endif %}
         <br>
         <br>
         {% if data %}
-        <label style="padding-left: 10px;"><b>Điểm trung bình là: {{data.diemtrungbinh}}</b></label>
+        <label style="padding-left: 200px;"><font color="red" size="5" face="arial"><b>Điểm trung bình là: {{data.diemtrungbinh}}</b></label>
         {% endif %}
         <br>
         <br>
-        <input type="submit">
-        </form>
+<input  type="submit"> 
+</form>
 </p>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>

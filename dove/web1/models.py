@@ -7,16 +7,20 @@ class Users(models.Model):
     ten=models.CharField(max_length=30)
 
 class Diem(models.Model):
-    diemvan=models.FloatField()
-    diemtoan=models.FloatField()
-    diemanh=models.FloatField()
-    diemhoa=models.FloatField()
-    diemsinh=models.FloatField()
-    diemly=models.FloatField()
-    diemsu=models.FloatField()
-    diemdia=models.FloatField()
-    diemcongnghe=models.FloatField()
-    diemgdcd=models.FloatField()
+    diemvan=models.FloatField(default=0)
+    diemtoan=models.FloatField(default=0)
+    diemanh=models.FloatField(default=0)
+    diemhoa=models.FloatField(default=0)
+    diemsinh=models.FloatField(default=0)
+    diemly=models.FloatField(default=0)
+    diemsu=models.FloatField(default=0)
+    diemdia=models.FloatField(default=0)
+    diemcongnghe=models.FloatField(default=0)
+    diemgdcd=models.FloatField(default=0)
     user=models.ForeignKey(Users,to_field='id',on_delete=models.CASCADE)
-    
-
+class Todo(models.Model):
+    vieccanlam1=models.CharField(max_length=40)
+    vieccanlam2=models.CharField(max_length=40)
+    vieccanlam3=models.CharField(max_length=40)
+    vieccanlam4=models.CharField(max_length=40)
+    vieccanlam4=models.CharField(max_length=40)
