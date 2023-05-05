@@ -1,0 +1,37 @@
+body{
+    background-color: #d5e0f2;
+    font-family: sans-serif;
+    background-image: url("static\web1\images\Layer 3.png");
+}
+.container{
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    text-align: center; 
+    margin: 100px 1000px;
+}
+.container h2{
+    display: inline-block; 
+    color: #083156;
+}
+.container label{
+    color: #083156;
+    float: left;
+    padding-left: 50px;
+}
+.container input{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.container button{
+    width: 210px;
+    height: 40px;
+    background-color: #6a8af5;
+    border-radius: 5px;
+    border: 1px solid grey;
+    color: white;
+}
