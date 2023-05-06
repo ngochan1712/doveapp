@@ -24,3 +24,10 @@ class Todo(models.Model):
     vieccanlam3=models.CharField(max_length=40)
     vieccanlam4=models.CharField(max_length=40)
     vieccanlam4=models.CharField(max_length=40)
+class personal_info(models.Model):
+    firstname=models.CharField(max_length=40)
+    lastname=models.CharField(max_length=40)
+    lop=models.CharField(max_length=40)
+    truong=models.CharField(max_length=40)
+    
+    

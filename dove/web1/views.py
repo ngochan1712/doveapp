@@ -7,6 +7,8 @@ from web1.models import Users, Diem, Todo
 # Create your views here.
 def home(request):
     return render(request,'web1/home.html')
+def personal_info(request):
+    return render(request,'web1/personal_info.html')
 @csrf_exempt
 def todolist(request):
      if request.method == 'POST':
