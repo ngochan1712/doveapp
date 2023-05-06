@@ -7,31 +7,48 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Trang chủ</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        {% load static %}
+
+        <link rel="stylesheet" href="{% static 'home.css' %}">
     </head>
-    
     <body>
-      
-
-    <a href = "http://127.0.0.1:8000/diemtb" target="_blank"> Điểm trung bình </a>&ensp;
-
-    <a href = "http://127.0.0.1:8000/login" target="_blank"> Trang đăng kí </a>&ensp;
-
-    <a href = "http://127.0.0.1:8000/signup" target="_blank"> Trang đăng nhập </a>&ensp;
-
-    <a href = "http://127.0.0.1:8000/todolist" target="_blank"> Todo-List </a>&ensp;
-
-    <a href = "http://127.0.0.1:8000/personal_info" target="_blank"> Thông tin cá nhân </a>&ensp;
-    
-    
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <h4> </h4>
-        <h2>  </h4>
+        <form method="post">
+            <div class="imgcontainer">
+              <img src="{% static 'web1/images/LOGO.png' %}" alt="Logo" class="logo">
+            </div>
+
+            <div class="intro">
+                <button type="submit">Login</button>
+                <button type="submit">Signup</button>
+                <h1>DOVE</h1>
+                <h1>STUDY ASSISTANT</h1>
+                <label for="description"><b>Ứng dụng ghi chú cho phép người dùng 
+                    <br>
+                    lên kế hoạch cụ thể tất cả công việc, lịch học.
+                    <br> 
+                    Đồng thời giúp phản ánh tiến độ hoàn thành công việc.</b>
+                </label>
+            <div class="function">
+                <h1>CÁC TÍNH NĂNG</h1>
+                <h1>NỔI BẬT</h1>
+                
+
+            </div>
+            
+            <div class="container1">
+                <h2>To do list</h2>
+                <br>
+            </div>
+            <div class="container2">
+              <h2>Charts</h2>
+              <br>
+            </div>
        
         
         <script src="" async defer></script>

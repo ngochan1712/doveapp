@@ -1,0 +1,48 @@
+body{
+    background-color: #d5e0f2;
+    font-family: sans-serif;
+    background-image: url('./web1/images/cloudbackground.png');   
+}
+.logo{
+    width: 300px;
+}
+.intro button{
+    width: 60px;
+    height: 30px;
+    background-color:#6a8af5 ;
+    border-radius: 5px;
+    border: 1px solid grey;
+    float: right;
+    margin-right: 20px;
+    color: white;
+}
+.submit {
+    margin-right: 10px;
+}
+
+.intro h1{ 
+    color: #6a8af5;
+    margin:0px auto;
+
+}
+.intro label{
+    color: #969ea5;
+}
+.container1{
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    text-align: center; 
+    
+}
+.container2{
+    width: 300px;
+    height: 280px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    text-align: center; 
+    margin: 0 1000px;
+}

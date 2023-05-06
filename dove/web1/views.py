@@ -26,6 +26,7 @@ def todolist(request):
         )
         Todo.save()
      return render(request,'web1/todolist.html')
+@csrf_exempt
 def login(request):
     return render(request,'web1/login.html')
 @csrf_exempt
@@ -93,7 +94,7 @@ def signup(request):
             ten=name,
         )
         new_user.save()
-        return redirect('login/')     
+        return redirect('login')     
            
            
     return render(request,'web1/signup.html')
