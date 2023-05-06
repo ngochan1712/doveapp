@@ -7,73 +7,44 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>To do list</title>
+        <title>Todo-List</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        {% load static %}
-
-        <link rel="stylesheet" href="{% static 'todolist.css' %}">
+        <link rel="stylesheet" href="">
     </head>
     <body>
-            <div  class="intro">
-                <h1 style="position:absolute; left:50px;top:70px; color:#6a8af5;"><b>DOVE</b></h1>
-                <hr style="position:absolute;top:120px;" width="100%" size="2px" color="grey" />
-                <h1 style="position:absolute; left:50px; top: 110px; color: #f69cb1;"><b>STUDY ASSISTANT</b></h1>
-              </div>
-
-        <a style="position:absolute; left:650px; top:100px;" href = "http://127.0.0.1:8000" target="_blank"><b> TRANG CHỦ </b></a>&ensp;
-
-        <a style="position:absolute; left:820px; top:100px;" href = "http://127.0.0.1:8000/diemtb" target="_blank"><b> ĐIỂM TRUNG BÌNH </b></a>&ensp;
-
-        <a style="position:absolute; left:1050px; top:100px;" href = "http://127.0.0.1:8000/mygoal" target="_blank"><b> MY GOAL </b></a>&ensp;
-                
-        <a style="position:absolute; left:1200px; top:100px;" href = "http://127.0.0.1:8000/personal_info" target="_blank"><b> THÔNG TIN CÁ NHÂN </b></a>&ensp;
-        <div style="position:absolute; left:60px; top:180px;" class="container">
-            <br>
-            <h1 style="position:absolute; left:50px;top:0px; color:#6a8af5;"><b>To do list</b></h1>  
-            <br>
-            <html>
-        <form >
-    
-        <br>
-        <input type="text" placeholder="Nhập việc cần làm 1..." name="Mục Tiêu 1">
-        <input type="date">
-        <input type="checkbox"> 
-        <br>
-        <br>
-        <br>
-        <input type="text" placeholder="Nhập việc cần làm 2..." name="Mục Tiêu 2">
-        <input type="date">
-        <input type="checkbox"> 
-        <br>
-        <br>
-        <br>
-        <input type="text" placeholder="Nhập việc cần làm 3..." name="Mục Tiêu 3">
-        <input type="date">
-        <input type="checkbox"> 
-        <br>
-        <br>
-        <br>
-        <input type="text" placeholder="Nhập việc cần làm 4..." name="Mục Tiêu 4">
-        <input type="date">
-        <input type="checkbox"> 
-        <br>
-        <br>
-        <br>
-        <input type="text" placeholder="Nhập việc cần làm 5..." name="Mục Tiêu 5">
-        <input type="date">
-        <input type="checkbox"> 
-        <br>
-        
-        <br><br>
-        <button type="submit">LƯU</button>
-        </form>
-            <img style="position:absolute; left:1200px;top:300px;" src="{% static 'web1/images/todolist.png' %}" alt="Todolist" class="todolist">
-        </div>   
+       
 
        
+        <html>
+<p>
+</p><form method="post"> 
+    
+        Việc cần làm 1:<br>
+        <input type="text" name="vieccanlam1">
+        <input type="date">
+        <input type="checkbox"> 
+        <br>
+        "Việc cần làm 2:"<br>
+        <input type="text" name="vieccanlam2">
+        <input type="date">
+        <input type="checkbox"> 
+        <input type="color">
+        <br>
+        Việc cần làm 3:<br>
+        <input type="text" name="vieccanlam3">
+        <input type="date">
+        <input type="checkbox"> 
+        <br>
+        Việc cần làm 4:<br>
+        <input type="text" name="vieccanlam4">
+        <input type="date">
+        <input type="checkbox"> 
+        <br>
+   
         
-
-        
+        <br><br>
+        <input type="submit">
+        </form>
 </body>
 </html>

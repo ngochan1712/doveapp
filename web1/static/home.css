@@ -1,21 +1,14 @@
 body{
     background-color: #d5e0f2;
-    background-repeat: no-repeat;
     font-family: sans-serif;
     background-image: url('./web1/images/cloudbackground.png'); 
     background-size:cover;  
-}
-a {
-    color: #083156;
-    font: sans-serif;
-    font-size: 20px;
-    text-decoration: none;
 }
 .intro h1{
     font-size: 40px;
 }
 .intro label{
-    font-size: 20px;
+    font-size: 25px;
 }
 .logo{
     width: 350px;
@@ -37,14 +30,21 @@ a {
 .intro label{
     color: #969ea5;
 }
-.container{
+.container1{
     width: 420px;
     height: 280px;
     background-color: white;
     border: 2px solid grey;
     border-radius: 20px;
-    text-align: center;  
+    text-align: center; 
+    
 }
-.container img{
-    width: 150px;
+.container2{
+    width: 300px;
+    height: 280px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    text-align: center; 
+    margin: 0 1000px;
 }

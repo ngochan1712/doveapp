@@ -1,58 +1,9 @@
-body{
-  background-color: #d5e0f2;
-  font-family: sans-serif;
-  background-image: url('./web1/images/cloudbackground.png');
-
-}
-.logo{
-  width: 250px;
-}
-.container{
-  width: 1400px;
-  height: 600px;
-  background-color: white;
-  border: 2px solid grey;
-  border-radius: 10px;
-  text-align: center; 
-  
-}
-a {
-  color: #083156;
-  font: sans-serif;
-  font-size: 20px;
-  text-decoration: none;
-}
-.container button{
-  width: 210px;
-  height: 40px;
-  background-color: #6a8af5;
-  border-radius: 5px;
-  border: 1px solid grey;
-  color: white;
-}
-
-
-.container h2{
-  display: inline-block; 
-  color: #083156;
-}
-.container label{
-  color: #083156;
-  float: left;
-  padding-left: 50px;
-}
-.container input{
-  width: 200px;
-  height: 40px;
-  border-radius: 5px;
-  border: 1px solid grey;
-}
-.container button{
-  width: 210px;
-  height: 40px;
-  background-color: #6a8af5;
-  border-radius: 5px;
-  border: 1px solid grey;
-  color: white;
-  position: absolute;left: 640px; bottom:20px;
-}
+body {
+    background-color: rgb(22, 129, 143);
+  }
+  h1 {
+    color: blue;
+  }
+  p {
+    color: red;
+  }

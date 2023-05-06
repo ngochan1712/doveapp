@@ -7,55 +7,33 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Thông tin cá nhân</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        {% load static %}
-
-        <link rel="stylesheet" href="{% static 'personal_info.css' %}">
+        <link rel="stylesheet" href="">
     </head>
+    <link rel="stylesheet" href="personal_info.css">
     <body>
-        <div  class="intro">
-            <h1 style="position:absolute; left:50px;top:70px; color:#6a8af5;"><b>DOVE</b></h1>
-            <hr style="position:absolute;top:120px;" width="100%" size="2px" color="grey" />
-            <h1 style="position:absolute; left:50px; top: 110px; color: #f69cb1;"><b>STUDY ASSISTANT</b></h1>
-          </div>
-
-    <a style="position:absolute; left:750px; top:100px;" href = "http://127.0.0.1:8000" target="_blank"><b> TRANG CHỦ </b></a>&ensp;
-
-    <a style="position:absolute; left:920px; top:100px;" href = "http://127.0.0.1:8000/diemtb" target="_blank"><b> TO DO LIST </b></a>&ensp;
-
-    <a style="position:absolute; left:1100px; top:100px;" href = "http://127.0.0.1:8000/mygoal" target="_blank"><b> ĐIỂM TRUNG BÌNH </b></a>&ensp;
-            
-    <a style="position:absolute; left:1350px; top:100px;" href = "http://127.0.0.1:8000/personal_info" target="_blank"><b> MY GOAL </b></a>&ensp;
-    <div style="position:absolute; left:60px; top:180px;" class="container">
-        <br>
-        <h1 style="position:absolute; left:50px;top:0px; color:#6a8af5;"><b>Thông tin cá nhân</b></h1>  
-        <br>
+      <h1 style="text-align:center;" font-size="5"><em> Thông tin cá nhân </em> </h1> 
       <form method="post">
-        <b>  <label style="position:absolute; left:20px;top:100px;" for="firstname">Họ:</label>
-        <input style="position:absolute; left:110px;top:90px;" type="text" placeholder="Họ của bạn " name="firstname" id="firstname"><b> 
-
-        <label style="position:absolute; left:300px;top:100px;" for="lastname">Tên:</label>
-        <input style="position:absolute; left:420px;top:90px;" type="text" placeholder="Tên của bạn" name="lastname" id="lastname">
+        <b>  <label  for="firstname">Họ:</label>
+        <input type="text" placeholder="Họ của bạn " name="firstname" id="firstname"><b> 
+        <label for="lastname">Tên:</label>
+        <input type="text" placeholder="Tên của bạn" name="lastname" id="lastname">
         <br><br>
-
-        <b>  <label style="position:absolute; left:20px;top:180px;" for="lop">Lớp:</label>
-        <input style="position:absolute; left:110px;top:170px;" type="text"  name="lop" id="lop"><b> 
+        <b>  <label  for="lop">Lớp:</label>
+        
+        <input type="text"  name="lop" id="lop"><b> 
         <br><br>
-
-        <b>  <label style="position:absolute; left:300px;top:180px;" for="truong">Trường:</label>
-        <input style="position:absolute; left:420px;top:170px;" type="text"  name="truong" id="truong"><b> 
-
-        <b>  <label style="position:absolute; left:20px;top:260px;" for="lop">Giới tính:</label>
-        <b>  <label style="position:absolute; left:150px;top:260px;" for="lop">Nam</label>
-        <input style="position:absolute; left:70px;top:250px;" type="radio" name="gioitinh" value="1"><br>
-        <b>  <label style="position:absolute; left:300px;top:260px;" for="lop">Nữ</label>
-        <input style="position:absolute; left:200px;top:250px;" type="radio" name="gioitinh" value="0" checked><br>
-        <br><br>
+        <b>  <label  for="truong">Trường:</label>
             
-        <label style="position:absolute; left:20px;top:320px;" for="lang-select">Bạn sống ở đâu:</label>
-        <select style="position:absolute; left:250px;top:320px;" name="lang" id="lang-select">
+        <input type="text"  name="truong" id="truong"><b> 
+        <p><strong>Chọn giới tính</strong></p>
+    <input type="radio" name="gioitinh" value="Nam"> Nam<br>
+    <input type="radio" name="gioitinh" value="Nữ" checked> Nữ<br>
+    <br><br>
+    <label for="place-select">Bạn sống ở đâu:</label>
+    <select name="place" id="place-select">
         <option value="">--Nơi bạn sống--</option>
         <option value="TPHCM">TPHCM</option>
         <option value="HN">Hà Nội</option>
@@ -64,15 +42,11 @@
         <option value="VT">Vũng Tàu</option>
         <option value="ĐT">Đồng Tháp</option>
         <option value="LA">Long An</option>
-        <option value="TĐ">Thủ Đức</option>
-        <option value="BĐ">Bình Định</option>
-        <option value="PY">Phú Yên</option>
-        <option value="QN">Quãng Ngãi</option>
     </select>
     <br><br>
    
     <br><br>
-    <button type="submit">LƯU</button>
+        <input type="submit" value="Gửi">
     </form>
        
         
