@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Trang chủ</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% load static %}
+
+        <link rel="stylesheet" href="{% static 'home.css' %}">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <form method="post">
+            <div style="position:fixed; left:1050px; top:140px;" class="imgcontainer">
+              <img src="{% static 'web1/images/LOGO.png' %}" alt="Logo" class="logo">
+            </div>
+        <a style="position:absolute; left:50px; top:100px;" href = "http://127.0.0.1:8000/login" target="_blank"><b> ĐĂNG NHẬP </b></a>&ensp;
+
+        <a style="position:absolute; left:200px; top:100px;" href = "http://127.0.0.1:8000/signup" target="_blank"><b> ĐĂNG KÝ </b></a>&ensp;
+    
+        <a style="position:absolute; left:650px; top:100px;" href = "http://127.0.0.1:8000/todolist" target="_blank"><b> TO DO LIST </b></a>&ensp;
+
+        <a style="position:absolute; left:800px; top:100px;" href = "http://127.0.0.1:8000/diemtb" target="_blank"><b> ĐIỂM TRUNG BÌNH </b></a>&ensp;
+
+        <a style="position:absolute; left:1050px; top:100px;" href = "http://127.0.0.1:8000/mygoal" target="_blank"><b> MY GOAL </b></a>&ensp;
+                
+        <a style="position:absolute; left:1200px; top:100px;" href = "http://127.0.0.1:8000/personal_info" target="_blank"><b> THÔNG TIN CÁ NHÂN </b></a>&ensp;
+       
+            
+            <div class="intro">
+                <button type="submit">Login</button>
+                <button type="submit">Signup</button>
+                <label style="position:absolute; left:60px;top:230px;" for="description">Ứng dụng ghi chú cho phép người dùng 
+                    <br>
+                    lên kế hoạch cụ thể tất cả công việc, lịch học.
+                    <br> 
+                    Đồng thời giúp phản ánh tiến độ hoàn thành công việc.
+                </label>
+            <div  class="intro">
+              <h1 style="position:absolute; left:50px;top:150px; color:#6a8af5;"><b>DOVE</b></h1>
+              <hr style="position:absolute;top:120px;" width="100%" size="2px" color="grey" />
+              <h1 style="position:absolute; left:180px; top: 150px; color: #f69cb1;"><b>STUDY ASSISTANT</b></h1>
+              <h1 style="position:absolute; left:50px;top:300px; color:#6a8af5;"><b>CÁC TÍNH NĂNG</b></h1>
+              <h1 style="position:absolute; left:380px; top: 300px; color: #f69cb1;"><b>NỔI BẬT</b></h1>
+            </div>
+            
+            <div style="position:absolute; left:60px; top:400px;" class="container">
+                <br>
+                <a href = "http://127.0.0.1:8000/todolist" target="_blank"><b> To do list </b></a>&ensp;  
+                <br>
+                <img src="{% static 'web1/images/todolist.png' %}" alt="Todolist" class="todolist">
+            </div>
+
+            <div style="position:absolute; left:550px; top:400px;" class="container">
+                <br>
+                <a href = "http://127.0.0.1:8000/diemtb" target="_blank"><b> Điểm trung bình </b></a>&ensp;  
+                <br>
+                <img style="width:100px;" src="{% static 'web1/images/bieudo.png' %}" alt="Todolist" class="todolist">
+            </div>
+            <div style="position:absolute; left:1040px; top:400px;" class="container">
+                <br>
+                <a href = "http://127.0.0.1:8000/mygoal" target="_blank"><b> My goals </b></a>&ensp;
+                <br>
+                <img src="{% static 'web1/images/goals.png' %}" alt="Todolist" class="todolist">
+            </div>
+       
+        
+        <script src="" async defer></script>
+    </body>
+</html>

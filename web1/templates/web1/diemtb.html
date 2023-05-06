@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GPA</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% load static %}
+
+        <link rel="stylesheet" href="{% static 'diemtb.css' %}">
+    </head>
+    <body>
+        <div  class="intro">
+                <h1 style="position:absolute; left:50px;top:70px; color:#6a8af5;"><b>DOVE</b></h1>
+                <hr style="position:absolute;top:120px;" width="100%" size="2px" color="grey" />
+                <h1 style="position:absolute; left:50px; top: 110px; color: #f69cb1;"><b>STUDY ASSISTANT</b></h1>
+              </div>
+
+        <a style="position:absolute; left:700px; top:100px;" href = "http://127.0.0.1:8000" target="_blank"><b> TRANG CHỦ </b></a>&ensp;
+
+        <a style="position:absolute; left:870px; top:100px;" href = "http://127.0.0.1:8000/todolist" target="_blank"><b> TO DO LIST </b></a>&ensp;
+
+        <a style="position:absolute; left:1050px; top:100px;" href = "http://127.0.0.1:8000/mygoal" target="_blank"><b> MY GOAL </b></a>&ensp;
+                
+        <a style="position:absolute; left:1200px; top:100px;" href = "http://127.0.0.1:8000/personal_info" target="_blank"><b> THÔNG TIN CÁ NHÂN </b></a>&ensp;
+        <div style="position:absolute; left:60px; top:180px;" class="container">
+            <br>
+            <h1 style="position:absolute; left:30px;top:0px; color:#6a8af5;"><b>Điểm trung bình</b></h1>  
+            <br>
+        <form method="post">
+        <h2 style="position:absolute;left: 30px; top:50px;">Nhập vào điểm Toán</h2>
+        <input style="position:absolute;left: 300px; top:60px;" type="number" name="diemtoan" min="0" max="10" step="0.1" value="00">
+                {% if data %}
+        <label style="position:absolute;left: 100px;bottom:130px;"><b>Điểm Toán: {{data.diemtoan}}</b></label>
+        {% endif %}
+
+        <h2 style="position:absolute;left: 500px; top:50px;">Nhập vào điểm Văn</h2>
+        <input style="position:absolute;left: 820px; top:60px;" type="number" name="diemvan" min="0" max="10" step="0.1" value="00">
+        {% if data %}
+        <label style="position:absolute;left: 300px;bottom:130px;"><b>Điểm Văn: {{data.diemvan}}</b></label>
+        {% endif %}
+
+        <h2 style="position:absolute;left: 1000px; top:50px;">Nhập vào điểm Anh </h2>
+        <input style="position:absolute;left: 1250px; top:60px;" type="number" name="diemanh" min="0" max="10" step="0.1" value="00">
+        {% if data %}
+        <label style="position:absolute;left: 500px;bottom:130px;"><b>Điểm Anh: {{data.diemanh}}</b></label>
+        {% endif %}
+
+        <h2 style="position:absolute;left: 30px; top:120px;">Nhập vào điểm Lý</h2>
+        <input style="position:absolute;left: 300px; top:130px;" type="number" name="diemly" min="0" max="10" step="0.1" value="00">
+        {% if data %}
+        <label style="position:absolute;left: 100px;bottom:100px;"><b>Điểm Lý: {{data.diemly}}</b></label>
+        {% endif %}
+
+
+        <h2 style="position:absolute;left: 500px; top:120px;">Nhập vào điểm Hóa</h2>
+        <input style="position:absolute;left: 820px; top:130px;" type="number" name="diemhoa" min="0" max="10" step="0.1" value="00">
+        {% if data %}
+        <label style="position:absolute;left: 300px;bottom:100px;"><b>Điểm Hóa: {{data.diemhoa}}</b></label>
+        {% endif %}
+
+        <h2 style="position:absolute;left: 1000px;top:120px;">Nhập vào điểm Sinh</h2>
+        <input style="position:absolute;left: 1250px; top:130px;" type="number" name="diemsinh" min="0" max="10" step="0.1" value="00">
+        {% if data %}
+         <label style="position:absolute;left: 500px;bottom:100px;"><b>Điểm Sinh: {{data.diemsinh}}</b></label>
+        {% endif %}
+
+        <h2 style="position:absolute;left: 30px;top:190px;">Nhập vào điểm GDCD</h2>
+        <input style="position:absolute;left: 300px; top:200px;" type="number" name="diemgdcd" min="0" max="10" step="0.1" value="00">
+        {% if data %}
+        <label style="position:absolute;left: 100px;bottom:70px;"><b>Điểm GDCD: {{data.diemgdcd}}</b></label>
+        {% endif %}
+
+        <h2 style="position:absolute;left: 500px; top:190px;">Nhập vào điểm Công Nghệ</h2>
+        <input style="position:absolute;left: 820px; top:200px;" type="number" name="diemcongnghe" min="0" max="10" step="0.1" value="00">
+        {% if data %}
+        <label style="position:absolute;left: 300px;bottom:70px;"><b>Điểm Công Nghệ: {{data.diemcongnghe}}</b></label>
+        {% endif %}
+
+        <h2 style="position:absolute;left: 1000px;top:190px;">Nhập vào điểm Sử</h2>
+        <input style="position:absolute;left: 1250px; top:200px;" type="number" name="diemsu" min="0" max="10" step="0.1" value="00">
+        {% if data %}
+        <label style="position:absolute;left: 500px;bottom:70px;"><b>Điểm Sử: {{data.diemsu}}</b></label>
+        {% endif %}
+
+        <h2 style="position:absolute;left: 30px; top:260px;">Nhập vào điểm Địa</h2>
+        <input style="position:absolute;left: 300px; top:270px;" type="number" name="diemdia" min="0" max="10" step="0.1" value="00">
+        {% if data %}
+        <label style="position:absolute;left: 100px;bottom:40px;"><b>Điểm Địa: {{data.diemdia}}</b></label>
+        {% endif %}
+        <br>
+        <br>
+        {% if data %}
+        <label style="position:absolute;left: 700px;bottom:130px;"><font color="red" size="5" ><b>Điểm trung bình là: {{diemtrungbinh}}</b></label>
+        {% endif %}
+        <br>
+        <br>
+        
+            <button type="submit">XEM ĐIỂM GPA</button>
+        </div>
+            <img style="position:absolute; left:1200px;top:500px;" src="{% static 'web1/images/bieudo.png' %}" alt="Bieu do" class="bieudo">
+</form>
+</p>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+    </body>
+</html>
