@@ -17,10 +17,7 @@ body{
     font-weight:normal;
     font-style:normal;
    }
-.intro h2{
-    font-family: font_strong;
-    position: 100px 40px;
-}
+
 .logo{
     width: 300px;
     background-image: url('./web1/images/LOGO.png');

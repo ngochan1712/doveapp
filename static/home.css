@@ -1,10 +1,17 @@
 body{
     background-color: #d5e0f2;
     font-family: sans-serif;
-    background-image: url('./web1/images/cloudbackground.png');   
+    background-image: url('./web1/images/cloudbackground.png'); 
+    background-size:cover;  
+}
+.intro h1{
+    font-size: 40px;
+}
+.intro label{
+    font-size: 25px;
 }
 .logo{
-    width: 300px;
+    width: 350px;
 }
 .intro button{
     width: 60px;
@@ -20,20 +27,15 @@ body{
     margin-right: 10px;
 }
 
-.intro h1{ 
-    color: #6a8af5;
-    margin:0px auto;
-
-}
 .intro label{
     color: #969ea5;
 }
 .container1{
-    width: 300px;
-    height: 400px;
+    width: 420px;
+    height: 280px;
     background-color: white;
-    border: 1px solid grey;
-    border-radius: 10px;
+    border: 2px solid grey;
+    border-radius: 20px;
     text-align: center; 
     
 }
